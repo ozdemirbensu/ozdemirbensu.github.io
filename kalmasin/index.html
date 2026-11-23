@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALMASIN | İzmir'de Sıfır İsraf</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Arka Plan Efekti -->
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">KALMASIN<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hakkinda">Nedir?</a></li>
+            <li><a href="#hesapla">Hesapla</a></li>
+            <li><a href="#ekip">Ekibimiz</a></li>
+            <li><a href="#katil" class="btn-primary">Bize Katıl</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Sürdürülebilir Kampüs & Çarşı</div>
+            <h1>Gelecek Çöpe <span>Kalmasın</span></h1>
+            <p>Küçükpark'tan Kemeraltı'na uzanan gıda kurtarma hareketi. Kampüslerde ve esnafta israfı bitiriyoruz.</p>
+            <a href="#hakkinda" class="btn-primary glow">Keşfet</a>
+        </div>
+    </header>
+
+    <section id="hakkinda" class="glass-section">
+        <div class="section-title">
+            <h2>Neyi Değiştiriyoruz?</h2>
+        </div>
+        <div class="cards-container">
+            <div class="glass-card">
+                <h3>Öğrenciler İçin</h3>
+                <p>Bütçeni koru, karbon ayak izini azalt. Tüketemeyeceğin gıdayı paylaş veya uygun fiyata kurtar.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Esnaf İçin</h3>
+                <p>Günün sonunda kalan taze ürünleri çöpe atmak yerine ekonomiye ve topluma kazandır.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hesapla" class="glass-section">
+        <div class="section-title">
+            <h2>Etki Hesaplayıcı</h2>
+            <p>Haftada kaç öğün çöpe gidiyor?</p>
+        </div>
+        <div class="calculator-box">
+            <input type="number" id="waste-input" placeholder="Örn: 3" min="0">
+            <button id="calc-btn" class="btn-primary">Etkimi Gör</button>
+            <div id="calc-result" class="result-text"></div>
+        </div>
+    </section>
+
+    <section id="ekip" class="glass-section">
+        <div class="section-title">
+            <h2>Proje Ekibi</h2>
+        </div>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="avatar">BÖ</div>
+                <h3>Bensu Özdemir</h3>
+                <p>İletişim & Yeni Medya</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">ASÖ</div>
+                <h3>Arel Su Özel</h3>
+                <p>Yaratıcı Yönetim</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 KALMASIN Projesi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

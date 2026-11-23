@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0b13;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Dinamik Canvas Arka Planı */
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: rgba(11, 11, 19, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #00ffcc;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ffcc;
+}
+
+/* Butonlar */
+.btn-primary {
+    background: linear-gradient(45deg, #00ffcc, #0088ff);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary.glow:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Hero Bölümü */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.badge {
+    background: rgba(0, 255, 204, 0.1);
+    color: #00ffcc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0, 255, 204, 0.3);
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    background: linear-gradient(45deg, #00ffcc, #0088ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #a0a0b8;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Glassmorphism Bölümleri */
+.glass-section {
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+}
+
+.section-title p {
+    color: #00ffcc;
+    margin-top: 10px;
+}
+
+.cards-container, .team-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.glass-card, .team-member, .calculator-box {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 24px;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover, .team-member:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 204, 0.3);
+}
+
+.glass-card h3 {
+    margin-bottom: 15px;
+    color: #00ffcc;
+}
+
+.glass-card p, .team-member p {
+    color: #a0a0b8;
+}
+
+/* Hesaplayıcı */
+.calculator-box input {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.calculator-box input:focus {
+    border-color: #00ffcc;
+}
+
+.result-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-height: 30px;
+}
+
+/* Ekip Avatarları */
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #0088ff, #00ffcc);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0b0b13;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #a0a0b8;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
